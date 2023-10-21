@@ -1,0 +1,17 @@
+// Buttons
+
+// form submit button
+
+@mixin button-style{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: $secondary-color;
+    padding: 12px 56px;
+    border: none;
+    letter-spacing: 0px;
+    cursor: pointer;
+    &:hover{
+        background-color: darken($color: $primary-color, $amount: 20);
+    }
+}

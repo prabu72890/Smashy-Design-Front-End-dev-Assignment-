@@ -1,3 +1,103 @@
-body{
-    background: rgba(250, 250, 104, 0.333);
+// Font Face imports -------------------------------------------------
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Plus+Jakarta+Sans:wght@500;600&display=swap');
+
+// style Partials imports---------------------------------------------
+@import 'variables';
+@import 'buttons';
+@import 'typography';
+
+
+// Breaking default presets  -----------------------------------------
+*{
+    margin: 0;
+    padding: 0;
 }
+// Custom body setups------------------------------------------------
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    background-color: $smashy-white;
+}
+
+// The Smashy from style beginning here--------------------------------
+.smashy-form-container{
+    background: $smashy-white;
+    width: 1366px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+
+    form{
+        margin: 81px auto auto 139px;
+
+        img{
+            margin: 0;
+            padding: 0;
+        }
+
+        h1{
+            @include h1-extraLight-textStyle;
+            margin-top: 30px;
+
+        }
+
+        .input-group{
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;
+
+
+            label{
+                @include subHeader-textStyle;
+            }
+            input{
+                @include body-textStyle;
+                color: $smashy-Tgray;
+                outline: none;
+                border: none;
+                border-bottom: 1px solid $smashy-Lgray;
+                width: 444px;
+                margin-top: 13px;
+                padding: 5px 0 5px 0;
+                border-style: 10px;
+                &:focus {
+                    color: $secondary-color;
+                  }
+
+            }
+
+        }
+
+        button{
+            @include button-style;
+            margin-top: 50px;
+            background-color: $primary-color;
+            color: $secondary-color;
+
+        }
+    }
+
+// js form validation reflection styles ----------------------------------------
+
+}
+
+.input-group .error{
+    @include body-textStyle;
+    color: $smashy-red;
+    align-self: flex-end;
+    margin: 5px 12px -10px 0 ;
+}
+
+
+.input-group.success input{
+    // color: $secondary-color;
+    // background: $smashy-white;
+}
+
+.input-group.error input{
+    // color: $smashy-red;
+    // background: $smashy-white;
+
+}
+
+
