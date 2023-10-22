@@ -1,0 +1,38 @@
+// device responsiveness setup media query ----------------------
+
+@media (max-width:1200px) {
+    body{
+        justify-content: center;
+    }
+   
+    .smashy-form-container{
+        width: auto;
+        display: flex;
+        justify-content: center;
+        background: none;
+        }
+
+        form{
+            justify-content: center;    
+        }
+
+        .form-banner{
+            height: 0;
+            visibility: hidden;
+        }
+    }
+
+    @media (min-width:1367px) {
+
+        .smashy-form-container{
+            margin-top: 50px;
+        }
+    }
+
+@media (max-width:360px){
+    .smashy-form-container{
+        form{
+            margin: 20px;
+        }
+    }
+}   

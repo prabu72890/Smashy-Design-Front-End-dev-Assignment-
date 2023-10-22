@@ -8,6 +8,7 @@ form.addEventListener('submit',(e)=>{
     
     if (!validateInputs()){
         e.preventDefault();
+        
     };
 })
 
