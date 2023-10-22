@@ -10,7 +10,7 @@ A simple web project that demonstrates form validation using HTML, Sass (SCSS), 
 - [Features](#features)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
-- [Code Examples](#code-examples)
+- [js Code ](#js-code)
 - [Contributing](#contributing)
 - [License](#license)
 - [Acknowledgments](#acknowledgments)
@@ -24,8 +24,9 @@ This demo link may experience slower loading times due to the large file size.
 
 ## Screenshots
 
+![image](https://github.com/prabu72890/Smashy-Design-Front-End-dev-Assignment-/assets/58351074/496d1c64-4645-4e63-a4c5-2884711eff2d)
+
 ![image](https://github.com/prabu72890/Smashy-Design-Front-End-dev-Assignment-/assets/58351074/7fd9471f-d039-4cb6-afdf-7ac0b2db98f4)
-![image](https://github.com/prabu72890/Smashy-Design-Front-End-dev-Assignment-/assets/58351074/f6b372de-1ed6-4609-9101-f2d30bb977fb)
 
 
 ## Technologies Used
@@ -53,7 +54,7 @@ To run this project locally, follow these steps:
 2. Click the "Submit" button.
 3. See real-time validation feedback based on your input.
 
-## Code Examples
+## Js Code
 
 ```javascript
 // JavaScript code for form validation
@@ -102,3 +103,22 @@ function validateInputs(){
     return success;
 }
 
+
+## Contributing
+Contributions are welcome. Feel free to submit issues or pull requests.
+
+## License
+This project is licensed under the MIT License.
+
+
+## Contact Information
+For questions or inquiries, please contact rpraburaj7@gmail.com
+
+## Author
+R.Praburaja
+GitHub
+LinkedIn
+
+## References
+MDN Web Docs
+W3Schools
