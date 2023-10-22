@@ -1,6 +1,6 @@
 # Smashy Design Front-End dev Assignment, Form Validation Project
 
-The web project demonstrates form validation using HTML, Sass (SCSS), and JavaScript.
+The web project demonstrates form validation using HTML, Sass (SCSS), and JavaScript for the Superstar method and HTML, CSS, and JavaScript for the Starter method.
 
 ## Table of Contents
 
@@ -29,9 +29,14 @@ This demo link may experience slower loading times due to the large file size.
 
 
 ## Technologies Used
-
+Method: Superstar
 - HTML
 - Sass (SCSS)
+- JavaScript
+  
+Method: Starter
+- HTML
+- CSS
 - JavaScript
 
 ## Features
@@ -45,7 +50,8 @@ This demo link may experience slower loading times due to the large file size.
 To run this project locally, follow these steps:
 
 1. Clone this repository.
-2. Open `index_form.html` in your web browser.
+2. Open the folder `Method Superstar HTML SASS JavaScript` or `Method Starter HTML CSS JavaScript`.
+3. Open `index_form.html` in your web browser.
 
 ## Usage
     
