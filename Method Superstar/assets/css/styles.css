@@ -35,6 +35,7 @@ body {
   display: flex;
   flex-direction: column;
   margin-top: 30px;
+  position: relative;
 }
 .smashy-form-container form .input-group label {
   font-family: "Plus Jakarta Sans", sans-serif;
@@ -75,13 +76,23 @@ body {
   background-color: #e0b500;
 }
 
-.input-group .error {
+.input-group .error-note {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 500;
   font-size: 12px;
   color: #FF0000;
+  position: absolute;
   align-self: flex-end;
-  margin: 5px 12px -10px 0;
+  top: 60px;
+  right: 27px;
+}
+
+.input-group.success input:focus, .input-group.success input:valid {
+  color: #05253C;
+}
+
+.input-group.error input:focus, .input-group.error input:valid {
+  color: #FF0000;
 }
 
 /*# sourceMappingURL=styles.css.map */

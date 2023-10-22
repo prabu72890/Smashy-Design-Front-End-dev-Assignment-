@@ -5,17 +5,22 @@ const emailAddress = document.querySelector ('#emailAddress');
 const address = document.querySelector ('#address');
 
 form.addEventListener('submit',(e)=>{
-    e.preventDefault();
-    validateInputs();
+    
+    if (!validateInputs()){
+        e.preventDefault();
+    };
 })
 
+// Validating every signle input value ---------------------
 function validateInputs(){
     const firstNameVal = firstName.value.trim();
     const lastNameVal = lastName.value.trim();
     const emailAddressVal = emailAddress.value.trim();
     const addressVal = address.value.trim();
+    let success = true;
 
     if(firstNameVal===''){
+        success = false;
         setError(firstName,'Please enter your first name')
     }
     else{
@@ -23,6 +28,7 @@ function validateInputs(){
     }
 
     if(lastNameVal===''){
+        success = false;
         setError(lastName,'Please enter your last name')
     }
     else{
@@ -30,9 +36,11 @@ function validateInputs(){
     }
 
     if(emailAddressVal===''){
+        success = false;
         setError(emailAddress,'Please enter your email')
     }
     else if(!validateEmail(emailAddressVal)){
+        success = false;
     setError(emailAddress,'Invalid email address')
     }
     else{
@@ -40,18 +48,20 @@ function validateInputs(){
     }
 
     if(addressVal===''){
+        success = false;
         setError(address,'Please enter Address')
     }
     else{
         setSuccess(address)
     }
+    return success;
 }
 
-// 
+// setup of errors and Success filed -------------
 
 function setError(element,message){
     const inputGroup = element.parentElement;
-    const errorElement = inputGroup.querySelector('.error');
+    const errorElement = inputGroup.querySelector('.error-note');
 
     errorElement.innerText = message;
     inputGroup.classList.add('error');
@@ -62,7 +72,7 @@ function setError(element,message){
 
 function setSuccess(element,){
     const inputGroup = element.parentElement;
-    const errorElement = inputGroup.querySelector('.error');
+    const errorElement = inputGroup.querySelector('.error-note');
 
     errorElement.innerText ='';
     inputGroup.classList.add('success');
@@ -70,7 +80,7 @@ function setSuccess(element,){
     
 }
 
-/// Email validations------------
+/// Email validations------------------------------------
 const validateEmail = (email)=>{
     return String(email)
     .toLowerCase()

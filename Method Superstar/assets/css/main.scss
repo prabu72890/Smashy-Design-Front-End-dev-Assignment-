@@ -45,6 +45,7 @@ body{
             display: flex;
             flex-direction: column;
             margin-top: 30px;
+            position: relative;
 
 
             label{
@@ -53,6 +54,7 @@ body{
             input{
                 @include body-textStyle;
                 color: $smashy-Tgray;
+                // background: none;
                 outline: none;
                 border: none;
                 border-bottom: 1px solid $smashy-Lgray;
@@ -60,10 +62,9 @@ body{
                 margin-top: 13px;
                 padding: 5px 0 5px 0;
                 border-style: 10px;
-                &:focus {
+                &:focus{
                     color: $secondary-color;
                   }
-
             }
 
         }
@@ -81,22 +82,26 @@ body{
 
 }
 
-.input-group .error{
+.input-group .error-note{
     @include body-textStyle;
     color: $smashy-red;
+    position: absolute;
     align-self: flex-end;
-    margin: 5px 12px -10px 0 ;
+    top: 60px;
+    right: 27px;
 }
 
 
 .input-group.success input{
-    // color: $secondary-color;
-    // background: $smashy-white;
+    &:focus, &:valid{
+    color: $secondary-color;
+    }
 }
 
 .input-group.error input{
-    // color: $smashy-red;
-    // background: $smashy-white;
+    &:focus, &:valid{
+        color: $smashy-red;
+    }
 
 }
 
