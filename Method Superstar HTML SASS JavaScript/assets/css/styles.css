@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Plus+Jakarta+Sans:wght@500;600&display=swap");
+@media (max-width: 1200px) {
+  body {
+    justify-content: center;
+  }
+  .smashy-form-container {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    background: none;
+  }
+  form {
+    justify-content: center;
+  }
+  .form-banner {
+    height: 0;
+    visibility: hidden;
+  }
+}
+@media (min-width: 1367px) {
+  .smashy-form-container {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 480px) {
+  .smashy-form-container form {
+    margin: 20px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #FFFFFF;
+}
+
+.smashy-form-container {
+  background: #FFFFFF;
+  width: 1366px;
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+.smashy-form-container form {
+  margin: 81px auto auto 139px;
+}
+.smashy-form-container form img {
+  margin: 0;
+  padding: 0;
+}
+.smashy-form-container form h1 {
+  font-family: "Manrope", sans-serif;
+  font-weight: 200;
+  font-size: 40px;
+  color: #05253C;
+  margin-top: 30px;
+}
+.smashy-form-container form .input-group {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  position: relative;
+}
+.smashy-form-container form .input-group label {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #05253C;
+}
+.smashy-form-container form .input-group input {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: #DBDBDB;
+  background: none;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #EBEBEB;
+  width: 444px;
+  margin-top: 13px;
+  padding: 5px 0 5px 0;
+  border-style: 10px;
+}
+.smashy-form-container form .input-group input:focus {
+  color: #05253C;
+}
+.smashy-form-container form button {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #05253C;
+  padding: 12px 56px;
+  border: none;
+  letter-spacing: 0px;
+  cursor: pointer;
+  margin-top: 50px;
+  background-color: #FFDC47;
+  color: #05253C;
+}
+.smashy-form-container form button:hover {
+  background-color: #e0b500;
+}
+
+.input-group .error-note {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: #FF0000;
+  position: absolute;
+  align-self: flex-end;
+  top: 60px;
+  right: 27px;
+}
+
+.input-group.success input:focus, .input-group.success input:valid {
+  color: #05253C;
+}
+
+.input-group.error input:focus, .input-group.error input:valid {
+  color: #FF0000;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,5 +1,6 @@
 // device responsiveness setup media query ----------------------
 
+//Medium-screen
 @media (max-width:1200px) {
     body{
         justify-content: center;
@@ -17,19 +18,20 @@
         }
 
         .form-banner{
-            height: 0;
-            visibility: hidden;
+            display: none;
         }
     }
 
-    @media (min-width:1367px) {
+//large-screen
+@media (min-width:1367px) {
 
-        .smashy-form-container{
-            margin-top: 50px;
-        }
+    .smashy-form-container{
+        margin-top: 50px;
     }
+}
 
-@media (max-width:360px){
+//small-screen
+@media (max-width:480px){
     .smashy-form-container{
         form{
             margin: 20px;
