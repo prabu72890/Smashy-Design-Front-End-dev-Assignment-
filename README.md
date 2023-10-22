@@ -1,6 +1,6 @@
 # Smashy Design Front-End dev Assignment, Form Validation Project
 
-A simple web project that demonstrates form validation using HTML, Sass (SCSS), and JavaScript.
+The web project demonstrates form validation using HTML, Sass (SCSS), and JavaScript.
 
 ## Table of Contents
 
@@ -13,7 +13,6 @@ A simple web project that demonstrates form validation using HTML, Sass (SCSS), 
 - [js Code ](#js-code)
 - [Contributing](#contributing)
 - [License](#license)
-- [Acknowledgments](#acknowledgments)
 - [Contact Information](#contact-information)
 - [Author](#author)
 - [References](#references)
@@ -49,7 +48,7 @@ To run this project locally, follow these steps:
 2. Open `index_form.html` in your web browser.
 
 ## Usage
-
+    
 1. Fill out the form fields.
 2. Click the "Submit" button.
 3. See real-time validation feedback based on your input.
@@ -57,7 +56,6 @@ To run this project locally, follow these steps:
 ## Js Code
 
 ```javascript
-// JavaScript code for form validation
 function validateInputs(){
     const firstNameVal = firstName.value.trim();
     const lastNameVal = lastName.value.trim();
@@ -101,24 +99,33 @@ function validateInputs(){
         setSuccess(address)
     }
     return success;
-}
+}:;
 
+```
 
 ## Contributing
+
 Contributions are welcome. Feel free to submit issues or pull requests.
 
 ## License
+
 This project is licensed under the MIT License.
 
-
 ## Contact Information
-For questions or inquiries, please contact rpraburaj7@gmail.com
+
+For questions or inquiries, please contact R. Praburaja at rpraburaj7@gmail.com.
 
 ## Author
-R.Praburaja
-GitHub
-LinkedIn
+
+- R Praburaja
+- [GitHub](https://github.com/prabu72890)
+- [LinkedIn](https://www.linkedin.com/in/prabu-raj-07/)
 
 ## References
-MDN Web Docs
-W3Schools
+
+- [MDN Web Docs](https://developer.mozilla.org/)
+- [W3Schools](https://www.w3schools.com/)
+- [Sass Giude](https://sass-lang.com/guide/)
+
+
+ 
